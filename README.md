@@ -70,5 +70,6 @@ References
 [1] D. Lee, A. Gerstlauer, "Learning-Based, Fine-Grain Power Modeling of
     System-Level Hardware IPs", TODAES, 2017 (Under review)
 
+---
 If you have any questions, please contact:
   Dongwook Lee (dongwook.lee@utexas.edu)
