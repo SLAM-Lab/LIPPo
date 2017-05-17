@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(BLACKBOX_LIBS)
+set(BLACKBOX_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/src
+    CACHE INTERNAL "${PROJECT_NAME}: Include Directories" FORCE)
+set(BLACKBOX_TRACE_CPP ${PROJECT_SOURCE_DIR}/src/trace.cpp
+  ${PROJECT_SOURCE_DIR}/src/InvActTraceSim.cpp
+    CACHE INTERNAL "${PROJECT_NAME}: trace cpp" FORCE)

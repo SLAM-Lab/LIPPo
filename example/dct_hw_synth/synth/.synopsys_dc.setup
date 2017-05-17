@@ -1,0 +1,3 @@
+set search_path  [ list .   ../nangate_lib]
+set link_library [list NangateOpenCellLibrary.db dw_foundation.sldb]
+set target_library [list NangateOpenCellLibrary.db]

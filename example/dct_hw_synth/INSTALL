@@ -1,0 +1,38 @@
+DCT PIPELINED EXAMPLE
+
+Required tool
+  Xilinx VIVADO HLS 13.3 is used
+  Synopsys VCS 2012
+  Synopsys Design compiler 2013
+  Synopsys PrimeTimePX 2012
+  Nangate 45nm library
+
+
+Build order (run each make.sh in following folders)
+  1. copy nangate library and verilog simulation file to nangate_lib
+     - NangateOpenCellLibrary.db
+     - NangateOpenCellLibrary.v
+     - NangateOpenCellLibrary_fast_ccs.lib
+     - NangateOpenCellLibrary_low_temp_ccs.lib
+     - NangateOpenCellLibrary_slow_ccs.lib
+     - NangateOpenCellLibrary_typical_ccs.lib
+     - NangateOpenCellLibrary_worst_low_ccs.lib
+  2. HLS synthesis (./hls) 
+     - after running script
+     - open project with GUI and push analysis button on the menu 
+       to create required input xml files 
+  3. verilog simulation (./verilog)
+  4. logic synthesis (./synth)
+  5. gate level simulation (./gate)
+  6. gate level power estimation (./power)
+  7. collect outputs (run install.sh)
+Output files
+  1. HLS outputs 
+     - hls/roki/solution1/.autopilot/a.o.3.bc
+     - hls/roki/solution1/.autopilot/dct.adb.xml
+     - hls/roki/solution1/.autopilot/dct.aemf
+     - hls/roki/solution1/.autopilot/dct.verbose.rpt.xml
+  2. gate-level power data
+     - power/audi_pwr1.out
+     - power/roki_pwr1.out
+

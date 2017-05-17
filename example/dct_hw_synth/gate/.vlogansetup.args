@@ -1,0 +1,6 @@
+8
+1683930421
+/home/polaris/dlee/.local/synopsys_db/NangateOpenCellLibrary.v 
+-full64 +v2k -C -work work /home/polaris/dlee/.local/synopsys_db/NangateOpenCellLibrary.v +delay_mode_zero +notimingcheck
+   /usr/local/packages/synopsys_2013/vcs-mx/amd64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl=' -pipe -O -I/usr/local/packages/synopsys_2013/vcs-mx/include ' -Mldflags=" -Wl,-E,-rpath /usr/local/packages/synopsys_2013/vcs-mx/amd64/lib " -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" " -Msaverestoreobj= -Mcrt0="" -Mcrtn="" -Mcsrc="" -Msyslibs="-lncurses -L/usr/X11R6/lib64 -lX11 -ldl -ldl "
+-Xvlogan=0x1 -full64 +v2k  -work=work    +delay_mode_zero +notimingcheck  +mixedhdl2    
