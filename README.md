@@ -1,5 +1,5 @@
-Learning-Based, Fine-Grain Power Modeling of System-Level Hardware IPs
-======================================================================
+LIPPSim: Learning-based IP Power Simulation
+===================================================================
 
 This repository incorporates the source code of activity annotation 
 tools, power model synthesis tools, and a prediction library [1].
