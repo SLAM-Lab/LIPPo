@@ -1,4 +1,4 @@
-LIPPSim: Learning-based IP Power Simulation
+LIPPo: Learning-based IP Power Modeling
 ===================================================================
 
 This repository incorporates the source code of activity annotation 
