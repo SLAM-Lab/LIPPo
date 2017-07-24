@@ -35,34 +35,40 @@ Directories:
 -----------
 ```
 +-- annotation/          -- Annotation toolset
-|  +-- python/              - HLS metadata parsing tool
-|  +-- llvm/                - annotation tool
+|  +-- python/             - HLS metadata parsing tool
+|  +-- llvm/               - Annotation tool
 +-- regressor/           -- C++ regressor library (prediction part)
 +-- whitebox/            -- White-box power synthesis framework
-|  +-- lib/                 - resource-level activity computation library
-|  +-- learn/               - cycle-level power learning tool
-|  +-- script/              - CMake script 
+|  +-- lib/                - Resource-level activity computation library
+|  +-- learn/              - Cycle-level power learning tool
+|  +-- script/             - CMake script 
 +-- graybox/             -- Gray-box power synthesis framework
-|  +-- lib/                 - basic block I/O activity computation library
-|  +-- learn/               - block-level power learning tool
-|  +-- script/              - CMake script 
+|  +-- lib/                - Basic block I/O activity computation library
+|  +-- learn/              - Block-level power learning tool
+|  +-- script/             - CMake script 
 +-- blackbox/            -- Black-box power synthesis framework
-|  +-- lib/                 - external I/O activity computation library
-|  +-- learn/               - invocation-level power learning tool
-|  +-- script/              - CMake script 
+|  +-- lib/                - External I/O activity computation library
+|  +-- learn/              - Invocation-level power learning tool
+|  +-- script/             - CMake script 
 +-- example/             -- Example 
-    +-- dct_power_model/    - pipelined DCT power modeling example
-    |   +-- whitebox/       - whitebox power model synthesis
-    |   +-- graybox/        - graybox power model synthesis
-    |   +-- blackbox/       - blackbox power model synthesis
-    |   +-- src/            - input files for power modeling and test files
-    |   +-- powerfile/      - gate-level measured power traces
-    +-- dct_hw_synth/    -- Pipelined DCT hardware synthesis and gate-level power measurements example
-        +-- hls/            - high-level synthesis 
-        +-- verilog/        - verilog test
-        +-- synth/          - logic synthesis 
-        +-- gate/           - gate-level simulation
-        +-- power/          - gate-level power measurement
+   +-- dct/                - Pipelined DCT power modeling example
+   |   +-- whitebox/          - Whitebox power model synthesis
+   |   +-- graybox/           - Graybox power model synthesis
+   |   +-- blackbox/          - Blackbox power model synthesis
+   |   +-- src/               - Input files for power modeling and test files
+   |   +-- powerfile/         - Gate-level measured power traces
+   +-- dct_hw_synth/       - Pipelined DCT hardware synthesis and gate-level power measurements example
+   |   +-- hls/               - High-level synthesis 
+   |   +-- verilog/           - Verilog test
+   |   +-- synth/             - Logic synthesis 
+   |   +-- gate/              - Gate-level simulation
+   |   +-- power/             - Gate-level power measurement
+   +-- hdr/                - Pipelined HDR power modeling example
+       +-- whitebox/          - Whitebox power model synthesis
+       +-- graybox/           - Graybox power model synthesis
+       +-- blackbox/          - Blackbox power model synthesis
+       +-- src/               - Input files for power modeling and test files
+       +-- powerfile/         - Gate-level measured power traces
 ```   
 
 References
