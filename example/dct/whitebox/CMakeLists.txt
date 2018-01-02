@@ -9,7 +9,7 @@ if(Boost_FOUND)
   message(STATUS "Found BOOST")
   include_directories(${Boost_INCLUDE_DIRS})
 endif()
-include_directories(${WHITEBOX_INCLUDE_DIRS} ${REGRESSOR_INCLUDE_DIR}) # Include files for whitebox lib and regression lib
+include_directories(${GRAYBOX_INCLUDE_DIRS} ${REGRESSOR_INCLUDE_DIR}) # Include files for whitebox lib and regression lib
 
 FILE(GLOB CPP_FILES ../src/*.cpp) # test files
 set(DESIGN dct) # desing name 

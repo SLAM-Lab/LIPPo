@@ -21,7 +21,11 @@ class RowEntry {
 public:
   RowEntry(int c_step, int rename_c_step)
     : c_step(c_step), rename_c_step(rename_c_step), queries() {
+#ifdef __SMALL__
     queries.reserve(32);
+#else
+    queries.reserve(256);
+#endif
   }
 
   void updateCStep(int new_c_step) {

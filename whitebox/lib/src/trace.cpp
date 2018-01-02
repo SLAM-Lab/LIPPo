@@ -10,6 +10,11 @@ unique_ptr<TraceSim> buildTraceSim(unique_ptr<FuncInfo>& finfo, string filename)
   ret->initialize(filename);
   return ret;
 }
+int buildSim(unique_ptr<FuncInfo>& finfo, string filename)
+{
+  TraceSim::simulator = std::move(buildTraceSim(finfo, filename));
+  return (TraceSim::simulator !=nullptr);
+}
 //#else
 // //unique_ptr<TraceSim> buildTraceSim(string filename)
 // unique_ptr<TraceSim> buildTraceSim(unique_ptr<FuncInfo>& funcInfo, string filename)
