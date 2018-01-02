@@ -52,7 +52,7 @@ def run_model(
         pt_inst = PowerTrace()
         pt_inst.readFromTraceFile(valid_power_filename, 1)
         index = np.squeeze(np.where(pt_inst.pwrData[:, 0] == 115)[0])
-        #print index
+        print index
         valid_power = np.array(pt_inst.pwrData[:, 1][index:]) * 1000
         my_learn.valid(valid_act, valid_power)
 

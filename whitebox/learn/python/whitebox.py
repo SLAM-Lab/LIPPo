@@ -126,5 +126,5 @@ class CycleDecompModel:
         for idx, i in enumerate(valid_activity_data.cs_info):
             row_idx = valid_activity_data.get_index(-1, -1, -1, i, -1)
             est_y = self.ai[idx].predict(valid_activity_data.act_info[row_idx])
-            est_power[row_idx] = est_y
+            est_power[row_idx] = np.squeeze(est_y)
         return est_power
