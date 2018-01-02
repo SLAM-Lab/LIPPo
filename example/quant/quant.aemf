@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1484575940000">
+  <ports id="1" name="input_r" type="PortType" originalName="input" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="2" name="output_r" type="PortType" originalName="output" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64"/>
+  <ports id="3" name="y" type="PortType" originalName="y" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="scale" type="PortType" originalName="scale" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="80" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="82" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="83" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="89" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="91" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="96" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="99" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="102" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="149" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="241" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="242" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="243" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="244" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="245" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="246" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="247" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <blocks id="19" name="meminst10.preheader" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader4</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="scale_read" originalName="scale" bitwidth="8" opcode="read">
+      <dataInputObjs>scale</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="y_read" originalName="y" bitwidth="8" opcode="read">
+      <dataInputObjs>y</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="tmp" lineNumber="34" fileName="../src/quant.cpp" fileDirectory=".." rtlName="tmp_fu_187_p2" contextFuncName="quant" bitwidth="1" opcode="icmp">
+      <inlineStackInfo fileName="../src/quant.cpp" linenumber="34" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="node_18" lineNumber="34" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="br">
+      <inlineStackInfo fileName="../src/quant.cpp" linenumber="34" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlInputObjs>.preheader4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/quant.cpp">
+      <validLinenumbers>34</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="77" name=".loopexit" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlInputObjs>.preheader4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="node_76" lineNumber="53" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="ret" nodeLabel="2">
+      <inlineStackInfo fileName="../src/quant.cpp" linenumber="53" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/quant.cpp">
+      <validLinenumbers>53</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="261" pipe_depth="3" RegionName="quant_label1">
+    <basic_blocks id="24" name=".preheader" type="BlockType">
+      <controlInputObjs>meminst10.preheader</controlInputObjs>
+      <controlInputObjs>block_47</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.loopexit</controlOutputObjs>
+      <controlOutputObjs>block_47</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="i1" originalName="i" bitwidth="7" opcode="phi" nodeLabel="1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <controlInputObjs>block_47</controlInputObjs>
+        <controlInputObjs>meminst10.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="exitcond" lineNumber="45" fileName="../src/quant.cpp" fileDirectory=".." rtlName="exitcond_fu_201_p2" contextFuncName="quant" bitwidth="1" opcode="icmp" nodeLabel="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="45" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="i_2" lineNumber="45" originalName="i" fileName="../src/quant.cpp" fileDirectory=".." rtlName="i_2_fu_207_p2" contextFuncName="quant" bitwidth="7" opcode="add" nodeLabel="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="45" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="node_23" lineNumber="45" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="br" nodeLabel="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="45" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_47</controlInputObjs>
+        <controlInputObjs>.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../src/quant.cpp">
+        <validLinenumbers>45</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="47" name="block_47" type="BlockType">
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="addr_1" lineNumber="47" originalName="addr" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" bitwidth="6" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="47" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="input_load_1" lineNumber="48" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" bitwidth="16" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="48" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>input_r</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="vqtable_load" lineNumber="49" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" bitwidth="5" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="49" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp2" lineNumber="49" fileName="../src/quant.cpp" fileDirectory=".." rtlName="tmp2_fu_224_p2" contextFuncName="quant" bitwidth="13" opcode="mul" nodeLabel="2">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="49" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="tmp_5" lineNumber="49" fileName="../src/quant.cpp" fileDirectory=".." rtlName="tmp_5_fu_236_p2" contextFuncName="quant" bitwidth="25" opcode="mul" nodeLabel="3">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="49" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="node_44" lineNumber="50" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="store" nodeLabel="3">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="50" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="node_46" lineNumber="45" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="br" nodeLabel="3">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="45" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <controlInputObjs>.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../src/quant.cpp">
+        <validLinenumbers>47</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
+        <validLinenumbers>49</validLinenumbers>
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>45</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="262" pipe_depth="3" RegionName="quant_label2">
+    <basic_blocks id="52" name=".preheader4" type="BlockType">
+      <controlInputObjs>meminst10.preheader</controlInputObjs>
+      <controlInputObjs>block_75</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.loopexit</controlOutputObjs>
+      <controlOutputObjs>block_75</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="i" originalName="i" bitwidth="7" opcode="phi" nodeLabel="1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <controlInputObjs>block_75</controlInputObjs>
+        <controlInputObjs>meminst10.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="exitcond3" lineNumber="36" fileName="../src/quant.cpp" fileDirectory=".." rtlName="exitcond3_fu_258_p2" contextFuncName="quant" bitwidth="1" opcode="icmp" nodeLabel="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="36" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="i_1" lineNumber="36" originalName="i" fileName="../src/quant.cpp" fileDirectory=".." rtlName="i_1_fu_264_p2" contextFuncName="quant" bitwidth="7" opcode="add" nodeLabel="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="36" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="node_51" lineNumber="36" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="br" nodeLabel="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="36" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_75</controlInputObjs>
+        <controlInputObjs>.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../src/quant.cpp">
+        <validLinenumbers>36</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="75" name="block_75" type="BlockType">
+      <controlInputObjs>.preheader4</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="addr" lineNumber="38" originalName="addr" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" bitwidth="6" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="38" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="input_load" lineNumber="39" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" bitwidth="16" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="39" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>input_r</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="yqtable_load" lineNumber="40" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" bitwidth="6" opcode="load" nodeLabel="1" nodeLatency="1">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="40" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp1" lineNumber="40" fileName="../src/quant.cpp" fileDirectory=".." rtlName="tmp1_fu_281_p2" contextFuncName="quant" bitwidth="14" opcode="mul" nodeLabel="2">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="40" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="tmp_7" lineNumber="40" fileName="../src/quant.cpp" fileDirectory=".." rtlName="tmp_7_fu_293_p2" contextFuncName="quant" bitwidth="25" opcode="mul" nodeLabel="3">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="40" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="node_72" lineNumber="41" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="store" nodeLabel="3">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="41" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="node_74" lineNumber="36" fileName="../src/quant.cpp" fileDirectory=".." contextFuncName="quant" opcode="br" nodeLabel="3">
+        <inlineStackInfo fileName="../src/quant.cpp" linenumber="36" fileDirectory="/home/local/prowl/dlee/Storage/working2016/quant/pipe" functionName="quant"/>
+        <controlInputObjs>.preheader4</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../src/quant.cpp">
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>41</validLinenumbers>
+        <validLinenumbers>36</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="i_reg_167">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="i1_reg_156">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond_reg_328">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_361">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp2_reg_352">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_183">
+    <nodeIds>33</nodeIds>
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="input_addr_reg_371">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_179">
+    <nodeIds>31</nodeIds>
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond3_reg_357">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_332">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="yqtable_addr_reg_376">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="vqtable_addr_reg_347">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_cast_cast_reg_323">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="ZigzagIndex_addr_reg_366">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="input_addr_1_reg_342">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp1_reg_381">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="ZigzagIndex_addr_1_reg_337">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_cast_cast6_reg_318">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <expressionNodes realName="ZigzagIndex_addr_gep_fu_120">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_253">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ZigzagIndex_addr_1_gep_fu_72">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_171">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_cast_cast_fu_197">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_242">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_310">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="vqtable_addr_gep_fu_96">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_201">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_addr_1_gep_fu_108">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp1_cast_fu_290">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_cast_fu_286">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_299">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_cast_cast_fu_220">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_cast_cast6_fu_193">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i1_phi_fu_160">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_cast_cast_fu_277">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp1_fu_281">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_236">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_187">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_264">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp2_cast_fu_233">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_270">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp2_fu_224">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_cast_fu_229">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_293">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="input_addr_gep_fu_128">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond3_fu_258">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="yqtable_addr_gep_fu_136">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_addr_gep_fu_148">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_fu_207">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_213">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="input_addr_1_gep_fu_84">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="y_read_read_fu_66">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="scale_read_read_fu_60">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="ZigzagIndex">
+    <nodeIds>31</nodeIds>
+    <nodeIds>59</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="input_r">
+    <nodeIds>33</nodeIds>
+    <nodeIds>61</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="output_r">
+    <nodeIds>44</nodeIds>
+    <nodeIds>72</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="vqtable">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="yqtable">
+    <nodeIds>64</nodeIds>
+  </memoryPorts>
+  <ioPorts name="input_r"/>
+  <ioPorts name="output_r"/>
+  <ioPorts name="scale">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="y">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="2" latency="2"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="2" latency="2"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="31" stage="1" latency="2"/>
+      <operations id="33" stage="1" latency="2"/>
+      <operations id="36" stage="1" latency="2"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="2" latency="2"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="2" latency="2"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="59" stage="1" latency="2"/>
+      <operations id="61" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="76" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="25"/>
+    </transitions>
+    <transitions inState="1" outState="5">
+      <condition id="23"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="41"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="42"/>
+    </transitions>
+    <transitions inState="2" outState="8">
+      <condition id="40"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="43"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="45"/>
+    </transitions>
+    <transitions inState="7" outState="5">
+      <condition id="46"/>
+    </transitions>
+    <transitions inState="5" outState="8">
+      <condition id="44"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="47"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="quant" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="67" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>19</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="quant_label1" mII="1" mDepth="3" mMinTripCount="64" mMaxTripCount="64" mMinLatency="65" mMaxLatency="-1" mType="1">
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>47</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="quant_label2" mII="1" mDepth="3" mMinTripCount="64" mMaxTripCount="64" mMinLatency="65" mMaxLatency="-1" mType="1">
+      <basicBlocks>52</basicBlocks>
+      <basicBlocks>75</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>77</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -64,11 +64,25 @@ Directories:
    |   +-- gate/              - Gate-level simulation
    |   +-- power/             - Gate-level power measurement
    +-- hdr/                - Pipelined HDR power modeling example
-       +-- whitebox/          - Whitebox power model synthesis
-       +-- graybox/           - Graybox power model synthesis
-       +-- blackbox/          - Blackbox power model synthesis
-       +-- src/               - Input files for power modeling and test files
-       +-- powerfile/         - Gate-level measured power traces
+   |   +-- whitebox/          - Whitebox power model synthesis
+   |   +-- graybox/           - Graybox power model synthesis
+   |   +-- blackbox/          - Blackbox power model synthesis
+   |   +-- src/               - Input files for power modeling and test files
+   |   +-- powerfile/         - Gate-level measured power traces
+   +-- bf_pp/              - Pipelined biliteral filter power modeling example
+   |   +-- whitebox/          - Whitebox power model synthesis
+   |   +-- graybox/           - Graybox power model synthesis
+   |   +-- blackbox/          - Blackbox power model synthesis
+   |   +-- src/               - Input files for power modeling and test files
+   |   +-- powerfile/         - Gate-level measured power traces
+   +-- bf_np/              - None-Pipelined biliteral filter power modeling example
+   |   +-- whitebox/          - Whitebox power model synthesis
+   |   +-- graybox/           - Graybox power model synthesis
+   |   +-- blackbox/          - Blackbox power model synthesis
+   |   +-- src/               - Input files for power modeling and test files
+   |   +-- powerfile/         - Gate-level measured power traces
+   +-- Gemm/               - Matrix multiplier power modeling data files
+   +-- Quant/              - Quantizer power modeling data files
 ```   
 
 References
