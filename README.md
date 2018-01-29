@@ -1,5 +1,5 @@
-LIPPo: Learning-based IP Power Modeling
-===================================================================
+LIPPo: Learning-Based IP Power Modeling
+=======================================
 
 This repository incorporates the source code of activity annotation 
 tools, power model synthesis tools, and a prediction library [1].
@@ -75,7 +75,7 @@ Directories:
    |   +-- blackbox/          - Blackbox power model synthesis
    |   +-- src/               - Input files for power modeling and test files
    |   +-- powerfile/         - Gate-level measured power traces
-   +-- bf_np/              - None-Pipelined biliteral filter power modeling example
+   +-- bf_np/              - Non-Pipelined biliteral filter power modeling example
    |   +-- whitebox/          - Whitebox power model synthesis
    |   +-- graybox/           - Graybox power model synthesis
    |   +-- blackbox/          - Blackbox power model synthesis
@@ -87,8 +87,8 @@ Directories:
 
 References
 ----------
-[1] D. Lee, A. Gerstlauer, "Learning-Based, Fine-Grain Power Modeling of
-    System-Level Hardware IPs", TODAES, 2017 (Under review)
+[1] D. Lee, A. Gerstlauer, "Learning-Based, Fine-Grain Power Modeling of System-Level Hardware IPs", 
+    ACM Transactions on Design Automation of Electronic Systems (TODAES), 2018 (accepted for publication)
 
 ---
 If you have any questions, please contact:
