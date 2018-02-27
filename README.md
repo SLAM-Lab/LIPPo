@@ -88,7 +88,7 @@ Directories:
 References
 ----------
 [1] D. Lee, A. Gerstlauer, "Learning-Based, Fine-Grain Power Modeling of System-Level Hardware IPs", 
-    ACM Transactions on Design Automation of Electronic Systems (TODAES), 2018 (accepted for publication)
+    ACM Transactions on Design Automation of Electronic Systems (TODAES), vol. 23, no. 3, February 2018.
 
 ---
 If you have any questions, please contact:
